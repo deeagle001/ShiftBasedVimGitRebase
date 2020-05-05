@@ -32,7 +32,7 @@ Hint: To delete a commit you may type `d` two times to delete the current line i
 
 ## Customize
 
-Not all the git rebase commands are available for in the selection. To extend or reorder the list of commands, only the `s:cmds` has to be simply edited in the top of the script.
+Not all the git rebase commands are available in the selection. To extend or reorder the list of commands, only the `s:cmds` has to be simply edited in the top of the script.
 
 
 ## Problems with `byobu`/`tmux`
@@ -46,7 +46,7 @@ unbind -n S-Left
 unbind -n S-Right
 ```
 
-`tmux` activated terminal type can also be problematic as the default `$TERM` (`screen-256color`) does not handle the `Shift+ArrowKeys` escape sequences well. To fix this ensure that the xterm key hanling is enabled with the following settings in the  `~/.byobu/.tmux.conf` file.
+`tmux` activated terminal type can also be problematic as the default `$TERM` (`screen-256color`) does not handle the `Shift+ArrowKeys` escape sequences well. To fix this ensure that the xterm key handling is enabled with the following settings in the  `~/.byobu/.tmux.conf` file.
 
 ```
 setw -g xterm-keys on
